@@ -13,11 +13,12 @@ class CampaignsList extends React.Component {
 
   renderCampaigns = () => {
     const { campaigns } = this.props
-    
+
     let items = []
     if (campaigns) {
       items = campaigns.map(c => ({
         header: c,
+        
         description: (
           <Link route={`/campaigns/${c}`}>
             <a>View campaign</a>
