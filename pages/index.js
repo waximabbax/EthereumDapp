@@ -13,6 +13,7 @@ class CampaignsList extends React.Component {
 
   renderCampaigns = () => {
     const { campaigns } = this.props
+    
     let items = []
     if (campaigns) {
       items = campaigns.map(c => ({
